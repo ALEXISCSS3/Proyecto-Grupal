@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reloj</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ponte Guapo</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="#" class="logo">PONTE<br>GUAPO</a>
+        <nav>
+            <div class="contenedor">
+                <a href="#banner">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#about">Nosotros</a>
+            </div>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="recursos/pelu.jpg" alt="">
+                </li>
+                <li>
+                    <img src="recursos/productos.png" alt="">
+                </li>
+                <li>
+                    <img src="recursos/peluqueria.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>PONTE GUAPO</h2> 
+            <p>peluqueria masculina</p>
+            <a href="">Pedi tu turno</a>
+        </div>
+    </section>
+    <div class="icono">
+        <a href="">
+            <img class="whatsapp" src="recursos/whatsapp.png">
+        </a>
+        <br>
+        <br>
+        <a href="">
+            <img class="instagram" src="recursos/logotipo-de-instagram.png">
+        </a>
+    </div>
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="slider">
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                
+                <div class="cards">
+                    <label class="card" for="item-1" id="select-1">
+                        <img src="recursos/acolor1.jpg" alt="">
+                        <div class="texto">
+                            <h3>Tintura </h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quas odit dolorem enim quae beatae nesciunt explicabo quia consectetur? Ipsa ullam</p>
+                        </div>
+                    </label>
+                    <label class="card" for="item-2" id="select-2">
+                        <img src="recursos/acolor2.jpg" alt="">
+                        <div class="texto">
+                            <h3>Productos</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quas odit dolorem enim quae beatae nesciunt explicabo quia consectetur? Ipsa ullam</p>
+                        </div>
+                    </label>
+                    <label class="card" for="item-3" id="select-3">
+                        <img src="recursos/trabajo 6.jpg" alt="">
+                        <div class="texto">
+                            <h3>Corte</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quas odit dolorem enim quae beatae nesciunt explicabo quia consectetur? Ipsa ullam</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="productos">
+        <h2>Productos</h2>
+    </section>
 </body>
+
+
 </html>

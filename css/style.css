@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'jacques francois';
+}
+
+:root {
+    --color1: #a7a7a7;
+    --color2: #3e3e3e;
+    --black: #242424;
+}
+
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+
+body {
+    background-color: var(--color1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    z-index: 2;
+}
+
+.logo {
+    position: relative;
+    font-size: 35px;
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.contenedor a {
+    font-size: 22px;
+    color: var(--color1);
+    text-decoration: none;
+    margin-left: 40px;
+    transition: all .5s ease;
+}
+
+.contenedor a:hover {
+    color: aliceblue;
+}
+
+#banner .slider {
+    width: 100%;
+    height: 98vh;
+}
+
+#banner .slider ul {
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 300%;
+}
+
+#banner .slider li {
+    width: 100%;
+    list-style: none;
+}
+
+#banner .slider img {
+    width: 100%;
+    height: 98vh;
+    filter: brightness(50%);
+}
+
+#banner .content {
+    width: 100%;
+    color: var(--color1);
+    position: absolute;
+    text-align: center;
+    top: 50vh
+}
+
+#banner .content h2 {
+    font-size: 50px;
+    filter: drop-shadow(7px 7px 10px black);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+#banner .content p {
+    color:lavender;
+    font-size: 20px;
+    font-family:Courier;
+    margin-bottom: 40px;
+    filter: drop-shadow(7px 7px 10px black);
+}
+
+#banner a {
+    color: var(--black);
+    display: inline-block;
+    background: var(--color1);
+    border: 1px solid;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 20px;
+    border-radius: 26px;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+
+#banner a:hover {
+    background: var(--color2);
+    color: var(--color1);
+}
+
+.icono {
+    position: fixed;
+    bottom: 2%;
+    left: 2%; 
+    z-index: 2; 
+}
+
+.icono .whatsapp {
+    width: 50px; 
+    margin-right: 10px;
+}
+.icono .instagram {
+    width: 45px; 
+}
+
+#services {
+    margin-top: 10rem;
+    height: 90vh;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    font-weight: 200;
+}
+
+#services .slider {
+    max-width: 1000px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .slider .container {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#services .slider .container .cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#services .slider .container .cards .card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#services .slider .container .cards .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#item-2:checked ~ .cards #select-1, 
+#item-1:checked ~ .cards #select-3, 
+#item-3:checked ~ .cards #select-2 {
+    transform: translateX(-70%) scale(0.8);
+    z-index: 0;
+    opacity: 0.6;
+}
+#item-3:checked ~ .cards #select-1, 
+#item-1:checked ~ .cards #select-2, 
+#item-2:checked ~ .cards #select-3 {
+    transform: translateX(70%) scale(0.8);
+    z-index: 0;
+    opacity: 0.6;
+}
+#item-1:checked ~ .cards #select-1, 
+#item-2:checked ~ .cards #select-2, 
+#item-3:checked ~ .cards #select-3 {
+    transform: translateX(0) translateY(15%) scale(1);
+    z-index: 1;
+}
+
+#services .slider .container .cards .texto {
+    margin-top: 5px;
+    position: absolute;
+    text-align: center;
+}
+#services .slider .container .cards .texto h3 {
+    font-size: 25px;
+}
+#services .slider .container .cards .texto p {
+    font-family: monospace;
+}
+
+
+#productos {
+    height: 80vh;
+}
+
+#productos h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 35px;
+    font-weight: 200;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    28% { margin-left: -100%;}
+
+    45% { margin-left: -100%;}
+    50% { margin-left: -100%;}
+    80% { margin-left: -100%;}
+
+    88% { margin-left: -200%;}
+    95% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
