@@ -13,8 +13,8 @@
 
 
 html {
-    scroll-behavior: smooth; 
-  }
+    scroll-behavior: smooth;
+}
 
 
 body {
@@ -40,6 +40,8 @@ header {
     font-size: 35px;
     text-decoration: none;
     color: var(--color1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    right: 8rem;
 }
 
 .contenedor a {
@@ -91,9 +93,9 @@ header {
 }
 
 #banner .content p {
-    color:lavender;
+    color: lavender;
     font-size: 20px;
-    font-family:Courier;
+    font-family: Courier;
     margin-bottom: 40px;
     filter: drop-shadow(7px 7px 10px black);
 }
@@ -119,21 +121,23 @@ header {
 .icono {
     position: fixed;
     bottom: 2%;
-    left: 2%; 
-    z-index: 2; 
+    left: 2%;
+    z-index: 2;
 }
 
 .icono .whatsapp {
-    width: 50px; 
+    width: 50px;
     margin-right: 10px;
 }
+
 .icono .instagram {
-    width: 45px; 
+    width: 45px;
 }
 
 #services {
     margin-top: 10rem;
     height: 90vh;
+    
 }
 
 #services h2 {
@@ -192,23 +196,25 @@ input[type="radio"] {
     object-fit: cover;
 }
 
-#item-2:checked ~ .cards #select-1, 
-#item-1:checked ~ .cards #select-3, 
-#item-3:checked ~ .cards #select-2 {
-    transform: translateX(-70%) scale(0.8);
+#item-2:checked~.cards #select-1,
+#item-1:checked~.cards #select-3,
+#item-3:checked~.cards #select-2 {
+    transform: translateX(-80%) scale(0.8);
     z-index: 0;
     opacity: 0.6;
 }
-#item-3:checked ~ .cards #select-1, 
-#item-1:checked ~ .cards #select-2, 
-#item-2:checked ~ .cards #select-3 {
-    transform: translateX(70%) scale(0.8);
+
+#item-3:checked~.cards #select-1,
+#item-1:checked~.cards #select-2,
+#item-2:checked~.cards #select-3 {
+    transform: translateX(80%) scale(0.8);
     z-index: 0;
     opacity: 0.6;
 }
-#item-1:checked ~ .cards #select-1, 
-#item-2:checked ~ .cards #select-2, 
-#item-3:checked ~ .cards #select-3 {
+
+#item-1:checked~.cards #select-1,
+#item-2:checked~.cards #select-2,
+#item-3:checked~.cards #select-3 {
     transform: translateX(0) translateY(15%) scale(1);
     z-index: 1;
 }
@@ -218,9 +224,11 @@ input[type="radio"] {
     position: absolute;
     text-align: center;
 }
+
 #services .slider .container .cards .texto h3 {
     font-size: 25px;
 }
+
 #services .slider .container .cards .texto p {
     font-family: monospace;
 }
@@ -237,16 +245,40 @@ input[type="radio"] {
     font-weight: 200;
 }
 
-@keyframes cambio{
-    0% { margin-left: 0;}
-    20% { margin-left: 0;}
-    28% { margin-left: -100%;}
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
 
-    45% { margin-left: -100%;}
-    50% { margin-left: -100%;}
-    80% { margin-left: -100%;}
+    20% {
+        margin-left: 0;
+    }
 
-    88% { margin-left: -200%;}
-    95% { margin-left: -200%;}
-    100% { margin-left: -200%;}
+    28% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    80% {
+        margin-left: -100%;
+    }
+
+    88% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
 }
