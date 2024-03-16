@@ -11,6 +11,7 @@
     --black: #5d4040;
 }
 
+/*inicio*/
 
 html {
     scroll-behavior: smooth;
@@ -21,6 +22,7 @@ body {
     background-color: var(--color1);
 }
 
+/*navegacion-inicio*/
 header {
     position: fixed;
     top: 0;
@@ -55,7 +57,7 @@ header {
 .contenedor a:hover {
     color: aliceblue;
 }
-
+/*rotacion-img-inicio*/
 #banner .slider {
     width: 100%;
     height: 98vh;
@@ -117,7 +119,7 @@ header {
     background: var(--color2);
     color: var(--color1);
 }
-
+/*redes-inicio*/
 .icono {
     position: fixed;
     bottom: 2%;
@@ -134,10 +136,11 @@ header {
     width: 45px;
 }
 
+/*servicios-inicio*/
 #services {
     margin-top: 10rem;
     height: 90vh;
-    
+
 }
 
 #services h2 {
@@ -195,7 +198,7 @@ input[type="radio"] {
     -o-object-fit: cover;
     object-fit: cover;
 }
-
+/*rotacion-img-inicio*/
 #item-2:checked~.cards #select-1,
 #item-1:checked~.cards #select-3,
 #item-3:checked~.cards #select-2 {
@@ -233,7 +236,7 @@ input[type="radio"] {
     font-family: monospace;
 }
 
-
+/*productos*/
 #productos {
     height: 80vh;
 }
