@@ -8,7 +8,7 @@
 :root {
     --color1: #a7a7a7;
     --color2: #3e3e3e;
-    --black: #5d4040;
+    --black: #000000;
 }
 
 /*inicio*/
@@ -20,6 +20,7 @@ html {
 
 body {
     background-color: var(--color1);
+    overflow-x: hidden;
 }
 
 /*navegacion-inicio*/
@@ -77,7 +78,6 @@ header {
 #banner .slider img {
     width: 100%;
     height: 98vh;
-    filter: brightness(50%);
 }
 
 #banner .content {
@@ -139,7 +139,7 @@ header {
 /*servicios-inicio*/
 #services {
     margin-top: 10rem;
-    height: 90vh;
+    height: 65vh;
 
 }
 
@@ -235,9 +235,20 @@ input[type="radio"] {
 #services .slider .container .cards .texto p {
     font-family: monospace;
 }
+hr {
+    margin: 0 auto;
+    width: 50%;
+    height: 4px; 
+    background-color: rgb(0, 0, 0); 
+}
+.linea {
+    margin-top: 5rem;
+}
+
 
 /*productos*/
 #productos {
+    margin-top: 8rem;
     height: 80vh;
 }
 
