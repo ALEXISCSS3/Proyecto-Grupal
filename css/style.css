@@ -263,7 +263,7 @@ input[type="radio"] {
     flex-wrap: wrap;
 }
 
-#productos .titulo {
+.titulo h2 {
     text-align: center;
     font-size: 40px;
     margin-top: 40px;
@@ -276,7 +276,7 @@ input[type="radio"] {
     padding: 35px 5px;
     max-width: 30vh;
     margin: 10px;
-    border-radius: 10%;
+    border-radius: 5%;
     transition: 0.5s;
 }
 
@@ -293,13 +293,14 @@ input[type="radio"] {
     margin: 10px;
 }
 
-#productos h3 {
-    font-family: 'jacques francois';
-    font-size: 20px;;
+#productos h2 {
+    font-size: 22px;;
+    margin-bottom: 5px;
 }
 
 #productos p {
-    font-size: 20px;;
+    font-family: monospace;
+    font-size: 13px;
 }
 
 
