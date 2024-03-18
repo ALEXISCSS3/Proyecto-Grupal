@@ -18,7 +18,7 @@ html {
 
 
 body {
-    background-color: var(--color1);
+    background-color:rgb(194, 194, 194);
 }
 
 
@@ -158,6 +158,7 @@ header {
 
 #services {
     padding-top: 5rem;
+    margin-bottom: 15rem;
 }
 
 #services h2 {
@@ -246,28 +247,32 @@ input[type="radio"] {
 }
 #services .slider .container .cards .texto p {
 
-    font-family: "Archivo", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Metrophobic", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
 }
 
 
 
 /*PRODUCTOS*/
 
-
+.titulo_prod {
+text-align: center;
+font-family: "Metrophobic", sans-serif;
+font-weight: 900;
+font-style: normal;
+font-size: 30px;
+margin-top: 25rem;
+}
 #productos {
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
-    padding-block: 5rem;
+
 }
 
 #productos .contenedor_productos {
-    padding-top: 10rem;
+    margin-top: 4rem;
     display: grid;
     row-gap: 3.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el ancho de las columnas automáticamente */
@@ -296,6 +301,11 @@ input[type="radio"] {
     width: 320px;
     border-radius: 1.5rem;
 }
+#productos img:hover{
+    content: url(../recursos/prod_fondo2.png);
+    
+}
+
 
 #productos .content {
     width: 280px;
@@ -317,6 +327,16 @@ input[type="radio"] {
     display: block;
     font-size: 20px;
     margin-bottom: .25rem;
+    font-family: "Metrophobic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#productos .content p {
+   
+    font-size: 15px;
+    font-family: "Metrophobic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #productos .producto:hover .content{
