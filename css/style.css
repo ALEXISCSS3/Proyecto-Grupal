@@ -258,64 +258,123 @@ input[type="radio"] {
 
 /*PRODUCTOS*/
 
+
 #productos {
-    padding: 90px 50px;
-    margin-left:5vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
 }
 
-.titulo_prod h3 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 25vh;
-    font-weight: 200;
+#productos .contenedor_productos {
+    padding-top: 10rem;
+    display: grid;
+    row-gap: 3.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el ancho de las columnas automáticamente */
+    justify-content: center; /* Centra los productos en el contenedor */
 }
 
-#productos a {
-    color: var(--black);
-    text-decoration: none;
-    padding: 15px 10px;
-    max-width: 30vh;
+@media screen and (min-width: 768px) and (max-width: 1199px) { /* Para pantallas medianas */
+    #productos .contenedor_productos {
+        grid-template-columns: repeat(2, 1fr); /* Divide la rejilla en dos columnas */
+    }
+}
+
+@media screen and (min-width: 1200px) { /* Para pantallas más anchas */
+    #productos .contenedor_productos {
+        grid-template-columns: repeat(3, 1fr); /* Divide la rejilla en tres columnas */
+    }
+}
+
+#productos .producto {
+    position: relative;
+    overflow: hidden;
     margin: 10px;
-    border-radius: 15px;
-    transition: 0.5s;
-}
-
-#productos a:hover {
-    background: var(--color2);
-    color: aliceblue;
 }
 
 #productos img {
-    width: 170px;
-    opacity: 0.8;
-    border-radius: 20px;
-    margin: 10px;
-    transition: all 0.5s;
+    width: 320px;
+    border-radius: 1.5rem;
 }
 
-#productos img:hover {
-    content: url(../recursos/prod_fondo2.png);
+#productos .content {
+    width: 280px;
+    background-color: rgb(168, 22, 22);
+    color: aliceblue;
+    padding: 1.5rem 2rem;
+    box-shadow: 7px 7px 10px rgba(0, 0%, 0%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
 }
 
-#productos h3 {
-    font-family: 'jacques francois';
-    font-size: 20px;;
+#productos .content h3 {
+    display: block;
+    font-size: 20px;
+    margin-bottom: .25rem;
 }
 
-#productos p {
-    font-size: 20px;;
+#productos .producto:hover .content{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
 }
 
+#productos .producto:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+#productos .producto:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+
+#productos .producto:not(:hover) .content{
+    animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+}
 
 /* RESEÑAS */
-
-#reseñas {
-
-}
 
 #reseñas h2 {
     text-align: center;
