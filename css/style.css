@@ -100,14 +100,14 @@ header {
 }
 
 #banner .content h2 {
-    font-size: 50px;
+    font-size: 80px;
     filter: drop-shadow(7px 7px 10px black);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 #banner .content p {
     color:lavender;
-    font-size: 20px;
+    font-size: 30px;
     font-family:Courier;
     margin-bottom: 40px;
     filter: drop-shadow(7px 7px 10px black);
@@ -159,7 +159,6 @@ header {
 
 #services {
     padding-top: 5rem;
-    height: 80vh;
 }
 
 #services h2 {
@@ -263,46 +262,76 @@ input[type="radio"] {
     flex-wrap: wrap;
 }
 
- .titulo {
+.titulo_prod h3 {
     text-align: center;
     font-size: 40px;
-    margin-top: 40px;
+    margin-top: 25vh;
     font-weight: 200;
-    display: block;
 }
 
 #productos a {
     color: var(--black);
     text-decoration: none;
-    padding: 35px 5px;
+    padding: 15px 10px;
     max-width: 30vh;
     margin: 10px;
-    border-radius: 5%;
+    border-radius: 15px;
     transition: 0.5s;
 }
 
 #productos a:hover {
     background: var(--color2);
     color: aliceblue;
-    border: 1px solid aliceblue;
 }
 
 #productos img {
-    clip-path: circle(50%);
-    width: 150px;
-    transition: 1s;
+    width: 170px;
+    opacity: 0.8;
+    border-radius: 20px;
     margin: 10px;
+    transition: all 0.5s;
+}
+
+#productos img:hover {
+    content: url(../recursos/prod_fondo2.png);
 }
 
 #productos h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-family: 'jacques francois';
+    font-size: 20px;;
 }
 
 #productos p {
-    font-size: 13px;
-    font-family:monospace;
+    font-size: 20px;;
 }
+
+
+/* RESEÑAS */
+
+#reseñas {
+
+}
+
+#reseñas h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+#reseñas img {
+    width: 340px;
+    margin-left: 20vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#reseñas .reseña {
+    margin: 17vh;
+}
+
+
+
 
 
 @keyframes cambio{
@@ -318,3 +347,4 @@ input[type="radio"] {
     95% { margin-left: -200%;}
     100% { margin-left: -200%;}
 }
+
