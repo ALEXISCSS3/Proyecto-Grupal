@@ -13,13 +13,12 @@
 
 
 html {
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth; 
+  }
 
 
 body {
-
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color1);
 }
 
 
@@ -42,15 +41,15 @@ header {
 
 .logo {
     position: relative;
-    right: 9rem;
-    font-size: 40px;
+    left: 2rem;
+    font-size: 35px;
     text-decoration: none;
     color: var(--color1);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .contenedor a {
-    font-size: 30px;
+    font-size: 22px;
     color: var(--color1);
     text-decoration: none;
     margin-left: 40px;
@@ -62,50 +61,11 @@ header {
 }
 
 
-@keyframes cambio {
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
-
-    28% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -100%;
-    }
-
-    80% {
-        margin-left: -100%;
-    }
-
-    88% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: -200%;
-    }
-}
-
 
 /*BANNER */
 
 #banner .slider-container {
-    overflow-x: hidden;
-    margin-top: 9rem;
+    overflow-x: hidden; 
 }
 
 #banner .slider {
@@ -149,7 +109,7 @@ header {
     font-size: 30px;
     font-family:Courier;
     margin-bottom: 40px;
-    filter:drop-shadow(7px 7px 10px black);
+    filter: drop-shadow(7px 7px 10px black);
 }
 
 #banner a {
@@ -180,16 +140,15 @@ header {
     padding: 8px 10px;
     position: fixed;
     bottom: 2%;
-    left: 2%;
-    z-index: 2;
+    left: 2%; 
+    z-index: 2; 
 }
 
 .icono .whatsapp {
-    width: 45px;
+    width: 45px; 
 }
-
 .icono .instagram {
-    width: 45px;
+    width: 45px; 
     margin-top: 12px;
 }
 
@@ -256,25 +215,23 @@ input[type="radio"] {
     object-fit: cover;
 }
 
-#item-2:checked~.cards #select-1,
-#item-1:checked~.cards #select-3,
-#item-3:checked~.cards #select-2 {
+#item-2:checked ~ .cards #select-1, 
+#item-1:checked ~ .cards #select-3, 
+#item-3:checked ~ .cards #select-2 {
     transform: translateX(-80%) scale(0.8);
     z-index: 0;
     opacity: 0.6;
 }
-
-#item-3:checked~.cards #select-1,
-#item-1:checked~.cards #select-2,
-#item-2:checked~.cards #select-3 {
+#item-3:checked ~ .cards #select-1, 
+#item-1:checked ~ .cards #select-2, 
+#item-2:checked ~ .cards #select-3 {
     transform: translateX(80%) scale(0.8);
     z-index: 0;
     opacity: 0.6;
 }
-
-#item-1:checked~.cards #select-1,
-#item-2:checked~.cards #select-2,
-#item-3:checked~.cards #select-3 {
+#item-1:checked ~ .cards #select-1, 
+#item-2:checked ~ .cards #select-2, 
+#item-3:checked ~ .cards #select-3 {
     transform: translateX(0) translateY(15%) scale(1);
     z-index: 1;
 }
@@ -284,11 +241,9 @@ input[type="radio"] {
     position: absolute;
     text-align: center;
 }
-
 #services .slider .container .cards .texto h3 {
     font-size: 25px;
 }
-
 #services .slider .container .cards .texto p {
 
     font-family: "Archivo", sans-serif;
@@ -302,20 +257,14 @@ input[type="radio"] {
 
 
 /*PRODUCTOS*/
-#productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    max-width: 1400px;
-    /* Ancho máximo del grid */
-    margin: 0 auto;
-    border-radius: 40px;
-    -webkit-box-shadow: -2px 2px 15px 10px rgba(179,179,179,1);
-    -moz-box-shadow: -2px 2px 15px 10px rgba(179,179,179,1);
-    box-shadow: -2px 2px 15px 10px rgba(179,179,179,1);
 
+#productos {
+    padding: 90px 50px;
+    margin-left:5vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .titulo_prod h3 {
