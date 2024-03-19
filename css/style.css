@@ -6,6 +6,7 @@
 }
 
 :root {
+    --color0: rgb(194, 194, 194);
     --color1: #a7a7a7;
     --color2: #8d8d8d;
     --black: #131313;
@@ -18,7 +19,7 @@ html {
 
 
 body {
-    background-color:rgb(194, 194, 194);
+    background-color: var(--color0);
 }
 
 
@@ -41,7 +42,7 @@ header {
 
 .logo {
     position: relative;
-    left: 2rem;
+    right: 1rem;
     font-size: 35px;
     text-decoration: none;
     color: var(--color1);
@@ -86,8 +87,9 @@ header {
 
 #banner .slider img {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
 #banner .content {
@@ -157,7 +159,7 @@ header {
 /*SERVICIOS*/
 
 #services {
-    padding-top: 5rem;
+    padding-top: 2rem;
     margin-bottom: 15rem;
 }
 
@@ -262,8 +264,9 @@ font-family: "Metrophobic", sans-serif;
 font-weight: 900;
 font-style: normal;
 font-size: 30px;
-margin-top: 25rem;
+margin-top: 17rem;
 }
+
 #productos {
     display: grid;
     place-items: center;
@@ -275,40 +278,60 @@ margin-top: 25rem;
     margin-top: 4rem;
     display: grid;
     row-gap: 3.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el ancho de las columnas automáticamente */
-    justify-content: center; /* Centra los productos en el contenedor */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    justify-content: center; 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) { /* Para pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 1199px) { 
     #productos .contenedor_productos {
-        grid-template-columns: repeat(2, 1fr); /* Divide la rejilla en dos columnas */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-@media screen and (min-width: 1200px) { /* Para pantallas más anchas */
+@media screen and (min-width: 1200px) {
     #productos .contenedor_productos {
-        grid-template-columns: repeat(3, 1fr); /* Divide la rejilla en tres columnas */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
 #productos .producto {
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 15px;
 }
 
 #productos img {
-    width: 320px;
+    width: 290px;
     border-radius: 1.5rem;
 }
-#productos img:hover{
-    content: url(../recursos/prod_fondo2.png);
+
+#productos .imagen1:hover{
+    content: url(../recursos/prod_naranja2.png);
+}
+#productos .imagen2:hover{
+    content: url(../recursos/prod_rojo2.png);
+    
+}
+#productos .imagen3:hover{
+    content: url(../recursos/prod_verde2.png);
+    
+}
+#productos .imagen4:hover{
+    content: url(../recursos/prod_rojo2.png);
+    
+}
+#productos .imagen5:hover{
+    content: url(../recursos/prod_verde2.png);
+    
+}
+#productos .imagen6:hover{
+    content: url(../recursos/prod_naranja2.png);
     
 }
 
 
 #productos .content {
-    width: 280px;
+    width: 250px;
     background-color: rgb(168, 22, 22);
     color: aliceblue;
     padding: 1.5rem 2rem;
@@ -323,7 +346,7 @@ margin-top: 25rem;
     transition: opacity 1s 1s;
 }
 
-#productos .content h3 {
+#productos h3 {
     display: block;
     font-size: 20px;
     margin-bottom: .25rem;
@@ -331,8 +354,8 @@ margin-top: 25rem;
     font-weight: 600;
     font-style: normal;
 }
-#productos .content p {
-   
+
+#productos p {
     font-size: 15px;
     font-family: "Metrophobic", sans-serif;
     font-weight: 400;
@@ -362,7 +385,7 @@ margin-top: 25rem;
         transform: translateY(-10rem);
     }
     100% {
-        transform: translateY(-7rem);
+        transform: translateY(-5rem);
     }
 }
 
@@ -374,7 +397,7 @@ margin-top: 25rem;
 
 @keyframes remove-data {
     0% {
-        transform: translateY(-7rem);
+        transform: translateY(-5rem);
     }
     50% {
         transform: translateY(-10rem);
