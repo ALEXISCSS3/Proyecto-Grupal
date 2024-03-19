@@ -6,8 +6,9 @@
 }
 
 :root {
+    --azulito: rgb(36, 69, 95);
     --color0: rgb(194, 194, 194);
-    --color1: #a7a7a7;
+    --color1: #c0bebe;
     --color2: #8d8d8d;
     --black: #131313;
 }
@@ -138,7 +139,7 @@ header {
 /*ICONOS REDES*/
 
 .icono {
-    background: var(--color2);
+    background: rgb(36, 36, 36);
     border: 1px solid var(--color1);
     border-radius: 30px;
     padding: 8px 10px;
@@ -336,9 +337,9 @@ input[type="radio"] {
 
 
 #productos .content {
-    width: 250px;
-    background-color: rgb(168, 22, 22);
-    color: aliceblue;
+    width: 280px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
     padding: 1.5rem 2rem;
     box-shadow: 7px 7px 10px rgba(0, 0%, 0%, 0.15);
     border-radius: 1rem;
@@ -369,7 +370,7 @@ input[type="radio"] {
 
 #productos .producto:hover .content{
     animation: show-data 1s forwards;
-    opacity: 1;
+    opacity: .9;
     transition: opacity .3s;
 }
 
@@ -425,7 +426,7 @@ input[type="radio"] {
 /* RESEÑAS */
 
 #reseñas h2 {
-    padding-top: 2rem;
+    padding-top: 7rem;
     text-align: center;
     font-size: 40px;
     font-weight: 200;
