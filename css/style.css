@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*. font-family: 'jacques francois';*/
+    font-family: "Unbounded", sans-serif;
 }
 
 :root {
@@ -41,6 +41,7 @@ header {
 }
 
 .logo {
+    font-family: 'jacques francois';
     position: relative;
     right: 1rem;
     font-size: 35px;
@@ -101,16 +102,17 @@ header {
 }
 
 #banner .content h2 {
+    font-family: 'jacques francois';
     font-size: 80px;
     filter: drop-shadow(7px 7px 10px black);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 #banner .content p {
-    color:lavender;
-    font-size: 30px;
-    font-family:Courier;
+    color: var(--color1);
+    font-size: 35px;
     margin-bottom: 40px;
+    font-weight: 300;
     filter: drop-shadow(7px 7px 10px black);
 }
 
@@ -164,8 +166,9 @@ header {
 }
 
 #services h2 {
+    font-family: "Unbounded", sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 200;
 }
 
@@ -244,13 +247,15 @@ input[type="radio"] {
     position: absolute;
     text-align: center;
 }
-#services .slider .container .cards .texto h3 {
-    font-size: 25px;
-}
-#services .slider .container .cards .texto p {
 
-    font-family: "Metrophobic", sans-serif;
-    font-weight: 600;
+#services .slider .container .cards .texto h3 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 20px;
+}
+
+#services .slider .container .cards .texto p {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -258,13 +263,13 @@ input[type="radio"] {
 
 /*PRODUCTOS*/
 
-.titulo_prod {
-text-align: center;
-font-family: "Metrophobic", sans-serif;
-font-weight: 900;
-font-style: normal;
-font-size: 30px;
-margin-top: 17rem;
+.titulo_prod h3{
+    text-align: center;
+    font-family: "Unbounded", sans-serif;
+    font-size: 45px;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: 17rem;
 }
 
 #productos {
@@ -348,17 +353,17 @@ margin-top: 17rem;
 
 #productos h3 {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: .25rem;
-    font-family: "Metrophobic", sans-serif;
+    font-family: "Unbounded", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 #productos p {
     font-size: 15px;
-    font-family: "Metrophobic", sans-serif;
-    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -390,7 +395,7 @@ margin-top: 17rem;
 }
 
 @keyframes remove-overflow {
-    to{
+    to {
         overflow: initial;
     }
 }
@@ -420,6 +425,7 @@ margin-top: 17rem;
 /* RESEÑAS */
 
 #reseñas h2 {
+    padding-top: 2rem;
     text-align: center;
     font-size: 40px;
     font-weight: 200;
