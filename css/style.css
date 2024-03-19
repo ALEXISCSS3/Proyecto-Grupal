@@ -10,19 +10,44 @@
     --color0: rgb(194, 194, 194);
     --color1: #c0bebe;
     --color2: #8d8d8d;
+    --color3: rgb(101, 101, 101);
     --black: #131313;
 }
 
-
 html {
     scroll-behavior: smooth; 
-  }
-
-
-body {
-    background-color: var(--color0);
 }
 
+body {
+    background-color: var(--color2);
+    position: relative; 
+    overflow-x: hidden; 
+}
+
+.franja-vertical1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    width: 800px;
+    height: 125vh;
+    background-color: var(--color3); 
+    z-index: -999;
+}
+
+.franja-vertical2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 190vh;
+    border-radius: 100px;
+    width: 800px;
+    height: 500vh;
+    background-color: var(--color3); 
+    z-index: -999;
+}
 
 
 /*HEADER*/
@@ -81,6 +106,22 @@ header {
     animation: cambio 15s infinite alternate linear;
     width: 300%;
 }
+
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    28% { margin-left: -100%;}
+
+    45% { margin-left: -100%;}
+    50% { margin-left: -100%;}
+    80% { margin-left: -100%;}
+
+    88% { margin-left: -200%;}
+    95% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
 
 #banner .slider li {
     width: 100%;
@@ -152,9 +193,90 @@ header {
 .icono .whatsapp {
     width: 45px; 
 }
+
 .icono .instagram {
     width: 45px; 
     margin-top: 12px;
+}
+
+.icono .numero{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 2rem;
+    box-shadow: 7px 7px 10px rgba(0, 0%, 0%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.icono .usuario{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 2rem;
+    box-shadow: 7px 7px 10px rgba(0, 0%, 0%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.icono .numero h4{
+    font-size: 13px;
+}
+
+.icono .whatsapp:hover {
+    animation: show-num 1s forwards;
+    opacity: .9;
+    transition: opacity .3s;
+}
+
+
+@keyframes show-num {
+    50% {
+        transform: translateX(5rem);
+    }
+    100% {
+        transform: translateX(3rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateX(3rem);
+    }
+    50% {
+        transform: translateX(5rem);
+    }
+    100% {
+        transform: translateX(-.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
 }
 
 
@@ -162,11 +284,11 @@ header {
 /*SERVICIOS*/
 
 #services {
-    padding-top: 2rem;
     margin-bottom: 15rem;
 }
 
 #services h2 {
+    margin-bottom: 4rem;
     font-family: "Unbounded", sans-serif;
     text-align: center;
     font-size: 45px;
@@ -256,7 +378,7 @@ input[type="radio"] {
 
 #services .slider .container .cards .texto p {
     font-family: "Unbounded", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -304,40 +426,18 @@ input[type="radio"] {
     position: relative;
     overflow: hidden;
     margin: 15px;
+    filter: drop-shadow(7px 7px 10px rgb(26, 26, 26));
 }
 
 #productos img {
     width: 290px;
     border-radius: 1.5rem;
-}
-
-#productos .imagen1:hover{
-    content: url(../recursos/prod_naranja2.png);
-}
-#productos .imagen2:hover{
-    content: url(../recursos/prod_rojo2.png);
-    
-}
-#productos .imagen3:hover{
-    content: url(../recursos/prod_verde2.png);
-    
-}
-#productos .imagen4:hover{
-    content: url(../recursos/prod_rojo2.png);
-    
-}
-#productos .imagen5:hover{
-    content: url(../recursos/prod_verde2.png);
-    
-}
-#productos .imagen6:hover{
-    content: url(../recursos/prod_naranja2.png);
-    
+    transition: all ;
 }
 
 
 #productos .content {
-    width: 280px;
+    width: 100%;
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     padding: 1.5rem 2rem;
@@ -425,40 +525,34 @@ input[type="radio"] {
 
 /* RESEÑAS */
 
-#reseñas h2 {
+#resenia {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#resenias h2 {
     padding-top: 7rem;
     text-align: center;
     font-size: 40px;
     font-weight: 200;
 }
 
-#reseñas img {
-    width: 340px;
-    margin-left: 20vh;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+#resenias img {
+    width: 400px;
+    margin: 28px;
+    border-radius: 1rem;
+    border: 2px solid rgb(217, 178, 71);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: drop-shadow(5px 5px 10px rgb(32, 32, 32));
 }
 
-#reseñas .reseña {
-    margin: 17vh;
+#resenias .resenia {
+    margin: 2.5rem;
+    margin-left: 16rem;
 }
 
 
 
 
-
-@keyframes cambio{
-    0% { margin-left: 0;}
-    20% { margin-left: 0;}
-    28% { margin-left: -100%;}
-
-    45% { margin-left: -100%;}
-    50% { margin-left: -100%;}
-    80% { margin-left: -100%;}
-
-    88% { margin-left: -200%;}
-    95% { margin-left: -200%;}
-    100% { margin-left: -200%;}
-}
 
