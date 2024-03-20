@@ -66,4 +66,4 @@ function cambiarImagenes() {
     index = (index + 2) % imagenes.length;
 }
 
-setInterval(cambiarImagenes, 5000);
+setInterval(cambiarImagenes, 4000);
