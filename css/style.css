@@ -218,78 +218,139 @@ header.transicion {
 
 /*ICONOS REDES*/
 
-.icono {
+#icono{
+    display: grid;
     background: rgb(36, 36, 36);
     border: 1px solid var(--color1);
     border-radius: 30px;
     padding: 8px 10px;
     position: fixed;
-    bottom: 2%;
-    left: 2%;
-    z-index: 2;
+    bottom: 3%;
+    left: 2%; 
 }
 
-.icono .whatsapp {
-    width: 45px;
+#icono .whatsapp img{
+    position: relative;
+    width: 45px; 
 }
 
-.icono .instagram {
-    width: 45px;
-    margin-top: 12px;
+#icono .instagram img{
+    position: relative;
+    width: 45px; 
 }
 
-/*
-.icono .numero{
-    width: 200px;
+
+
+
+#icono .whatsapp .numero{
+    width: 150px;
     height: 20px;
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     padding: 1.5rem 2rem;
-    box-shadow: 7px 7px 10px rgba(0, 0%, 0%, 0.15);
     border-radius: 1rem;
     position: absolute;
-    left: 0;
+    left: 2.5rem;
     right: 0;
-    margin-inline: auto;
+    bottom: 5rem;
     opacity: 0;
-    transition: opacity 1s 1s;
+    transition: opacity 1s;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
-*/
-.icono .usuario {
-    width: 200px;
+
+#icono .instagram .usuario{
+    width: 150px;
     height: 20px;
     background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     padding: 1.5rem 2rem;
-    box-shadow: 7px 7px 10px rgba(0, 0%, 0%, 0.15);
     border-radius: 1rem;
     position: absolute;
-    left: 0;
+    left: 2.5rem;
     right: 0;
-    margin-inline: auto;
+    bottom: .7rem;
     opacity: 0;
-    transition: opacity 1s 1s;
+    transition: opacity 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.numero h4 {
-    font-size: 13px;
-    display: none;
+#icono .whatsapp .numero h4{
+    color: rgb(54, 212, 75);
+    font-family: "Unbounded", sans-serif;
+    font-size: 10px;
+    display: block;
+    font-style: normal;
 }
 
-.icono .whatsapp:hover {
+#icono .instagram .usuario h4{
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed737 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: "Unbounded", sans-serif;
+    font-size: 12px;
+    display: block;
+    font-style: normal;
+}
+
+
+
+#icono .whatsapp:hover .numero{
     animation: show-num 1s forwards;
     opacity: .9;
     transition: opacity .3s;
 }
 
+#icono .whatsapp:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+#icono .whatsapp:not(:hover){
+    animation: show-overflow 2s forwards;
+} 
+
+#icono .whatsapp:not(:hover) .numero{
+    animation: remove-num 1s forwards;
+}
+
+
+
+
+#icono .instagram:hover .usuario{
+    animation: show-num 1s forwards;
+    opacity: .9;
+    transition: opacity .3s;
+}
+
+#icono .instagram:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+#icono .instagram:not(:hover){
+    animation: show-overflow 2s forwards;
+} 
+
+#icono .instagram:not(:hover) .usuario{
+    animation: remove-num 1s forwards;
+}
+
 
 @keyframes show-num {
     50% {
-        transform: translateX(5rem);
+        transform: translateX(2rem);
     }
 
     100% {
-        transform: translateX(3rem);
+        transform: translateX(1.4rem);
     }
 }
 
@@ -299,17 +360,17 @@ header.transicion {
     }
 }
 
-@keyframes remove-data {
+@keyframes remove-num {
     0% {
-        transform: translateX(3rem);
+        transform: translateX(1.4rem);
     }
 
     50% {
-        transform: translateX(5rem);
+        transform: translateX(2rem);
     }
 
     100% {
-        transform: translateX(-.5rem);
+        transform: translateX(-1rem);
     }
 }
 
