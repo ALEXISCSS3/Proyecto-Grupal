@@ -44,7 +44,7 @@ body {
     margin-top: 190vh;
     border-radius: 100px;
     width: 800px;
-    height: 500vh;
+    height: 290vh;
     background-color: var(--color3);
     z-index: -999;
 }
@@ -666,3 +666,58 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
 }
+
+#nosotros{
+    height: 100vh;
+}
+
+#contacto{
+    height: 90vh;
+    
+}
+
+#contacto h2{
+    font-weight: 200;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#contacto .logo-barber{
+    width: 60px;
+    margin-right: 10px;
+    margin-bottom: -10px;
+}
+
+#contacto .mapa{
+    padding-top: 7rem;
+    padding-left: 8rem;
+}
+
+#contacto aside{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    float: right;
+    width: 30%;
+    margin-right: 4rem;
+    padding: 110px 0px;
+}
+
+#contacto .mapa iframe{
+    filter: drop-shadow(7px 7px 10px rgb(26, 26, 26));
+    border-radius: 30px;
+    width: 700px;
+}
+
+#contacto aside img{
+    width: 40px;
+}
+
+hr {
+    border-color: #131313;
+}
+
+
+
