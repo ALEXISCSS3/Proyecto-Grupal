@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="JS/script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,7 @@
     </section>
 
     <div class="icono">
-        <a href="https://wa.link/4n7eci">
+        <a href="">
             <img class="whatsapp" src="recursos/whatsapp.png">
         </a>
         <div class="numero"><h4>11 4564-2215</h4></div>
@@ -193,43 +194,6 @@
             <a href=""><img id="imagen2" src="recursos/reseña2.jpeg" alt=""></a>
         </div>
     </section>
-    <script>
-        const imagen1 = document.getElementById("imagen1");
-        const imagen2 = document.getElementById("imagen2");
-        const imagen3 = document.getElementById("imagen3");
-        const imagen4 = document.getElementById("imagen4");
-        const imagen5 = document.getElementById("imagen5");
-        const imagen6 = document.getElementById("imagen6");
-        const imagen7 = document.getElementById("imagen7");
-        const imagen8 = document.getElementById("imagen8");
-        const imagen9 = document.getElementById("imagen9");
-
-        const imagenes = [
-            "recursos/reseña1.jpeg",
-            "recursos/reseña2.jpeg",
-            "recursos/reseña3.jpeg",
-            "recursos/reseña4.jpeg",
-            "recursos/reseña5.jpeg",
-            "recursos/reseña6.jpeg",
-            "recursos/reseña7.jpeg",
-            "recursos/reseña8.jpeg",
-            "recursos/reseña9.jpeg",
-        ];
-
-        let index = 0;
-
-        function cambiarImagenes() {
-            const imagen1 = document.getElementById("imagen1");
-            const imagen2 = document.getElementById("imagen2");
-
-            imagen1.src = imagenes[index];
-            imagen2.src = imagenes[(index + 1) % imagenes.length];
-
-            index = (index + 2) % imagenes.length;
-        }
-
-        setInterval(cambiarImagenes, 4000);
-    </script>
 </body>
 
 

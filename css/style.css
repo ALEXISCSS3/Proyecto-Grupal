@@ -62,7 +62,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--black);
+    transition: 0.4s;
+
+    z-index: 2;
+}
+header.transicion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:var(--black);
     z-index: 2;
 }
 
@@ -198,7 +212,7 @@ header {
     width: 45px; 
     margin-top: 12px;
 }
-
+/*
 .icono .numero{
     width: 200px;
     height: 20px;
@@ -214,7 +228,7 @@ header {
     opacity: 0;
     transition: opacity 1s 1s;
 }
-
+*/
 .icono .usuario{
     width: 200px;
     height: 20px;
@@ -231,8 +245,9 @@ header {
     transition: opacity 1s 1s;
 }
 
-.icono .numero h4{
+.numero h4{
     font-size: 13px;
+    display: none;
 }
 
 .icono .whatsapp:hover {
