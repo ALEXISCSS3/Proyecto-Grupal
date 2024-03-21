@@ -281,7 +281,7 @@ header.transicion {
 #icono .whatsapp .numero h4{
     color: rgb(54, 212, 75);
     font-family: "Unbounded", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     display: block;
     font-style: normal;
 }
@@ -671,7 +671,7 @@ input[type="radio"] {
 
 /*nosotros*/
 
-.Nosotros {
+#nosotros {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -683,18 +683,19 @@ input[type="radio"] {
     background-color:rgb(53, 53, 53);
 }
 
-.Nosotros img {
+#nosotros img {
     width: 400px;
     margin:  0 auto;
     filter: drop-shadow(7px 7px 10px rgb(26, 26, 26));
+    mask-image: linear-gradient(black 40%, transparent);
 }
 
-.Nosotros p {
+#nosotros p {
     font-size: 20px;
     color: var(--color0);
 }
 
-.Nosotros h3 {
+#nosotros h3 {
     font-size: 26px;
     margin-bottom: 2rem;
     color: var(--color0);
@@ -710,7 +711,7 @@ input[type="radio"] {
 }
 
 #contacto h2{
-    margin-top: 12rem;
+    margin-top: 15rem;
     font-weight: 200;
     font-size: 40px;
     justify-content: center;
@@ -725,6 +726,7 @@ input[type="radio"] {
 }
 
 #contacto .mapa{
+    position: absolute;
     padding-top: 7rem;
     padding-left: 8rem;
 }
@@ -736,7 +738,7 @@ input[type="radio"] {
     float: right;
     width: 30%;
     margin-right: 4rem;
-    padding: 110px 0px;
+    padding: 170px 0px;
 }
 
 #contacto .mapa iframe{
@@ -754,4 +756,83 @@ hr {
 }
 
 
+
+
+footer{
+    background-color: var(--black);
+    color: rgb(199, 201, 193);
+    text-align: center;
+    height: 300px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 33.3%;
+}
+
+h3{
+    text-align: center;
+    margin: 15px;
+}
+
+.footer-content p{
+    color: var(--color2);
+    font-weight: 300;
+    margin: auto;
+    margin: 7px;
+}
+
+.footer-content ul{
+    text-align: center;
+}
+
+.footer-content li{
+    list-style-type: none;
+}
+
+.footer-content a{
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--color2);
+    
+}
+
+
+.lista{
+    padding: 0;
+}
+
+.lista li{
+    text-decoration: none;
+    font-weight: 300;
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 3px;
+    position: relative;
+}
+
+.footer-content .red li{
+    margin: 7px;
+}
+
+
+.botom-footer {
+    background: rgb(30, 30, 30);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.botom-footer p{
+    color: var(--color1);
+    margin: 0;
+    font-size: 13px;
+}
 
