@@ -226,7 +226,7 @@ header.transicion {
     padding: 8px 10px;
     position: fixed;
     bottom: 3%;
-    left: 2%; 
+    left: 2%;
 }
 
 #icono .whatsapp img{
@@ -283,6 +283,7 @@ header.transicion {
     font-family: "Unbounded", sans-serif;
     font-size: 12px;
     display: block;
+    position: absolute;
     font-style: normal;
 }
 
@@ -776,7 +777,7 @@ footer{
     width: 33.3%;
 }
 
-h3{
+.footer h3{
     text-align: center;
     margin: 15px;
 }
@@ -835,4 +836,3 @@ h3{
     margin: 0;
     font-size: 13px;
 }
-
