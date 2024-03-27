@@ -65,7 +65,6 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
-
     z-index: 2;
 }
 
@@ -109,6 +108,10 @@ header.transicion {
 
 
 /*BANNER */
+
+#banner {
+    width: 100%;
+}
 
 #banner .slider-container {
     overflow-x: hidden;
@@ -520,6 +523,10 @@ input[type="radio"] {
     margin: 0 auto;
     padding: 4rem;
     max-width: 50%;
+   /*
+   margin-inline: 1.5rem;
+    border-radius: 30px;
+   */ 
 }
 
 #productos .contenedor_productos {
@@ -723,7 +730,10 @@ input[type="radio"] {
 
 #contacto {
     height: 90vh;
+}
 
+#contacto{
+    height: 100vh;
 }
 
 #contacto h2 {
@@ -925,6 +935,142 @@ footer {
 }
 
 
+@media only screen and (max-width: 768px) {
+
+    .logo{
+        font-family: 'jacques francois';
+    }
+
+    #banner .content h2 {
+        font-family: 'jacques francois';
+    }
+
+    #icono{
+        display: none;
+    }
+
+    #productos img {
+        width: 390px;
+    }
+
+    .fondo .franja-vertical1 {
+        left: 50%;
+    }
+}
+
+@media (max-width:1300px) {
+    .logo{
+        font-family: 'jacques francois';
+    }
+
+    #banner .content h2 {
+        font-family: 'jacques francois';
+    }
+
+    #contacto .mapa iframe {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width:1160px) {
+
+    .logo{
+        font-family: 'jacques francois';
+    }
+
+    #banner .content h2 {
+        font-family: 'jacques francois';
+    }
+
+    #contacto {
+        display: grid;
+        grid-template-columns: auto;
+        height: 120vh;
+    }
+
+    #contacto .mapa iframe {
+        margin-top: 15rem;
+        width: 600px;
+        height: 300px;
+        margin-left: 9rem;
+    }
+
+    #contacto aside{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        float: none;
+        width: 100%;
+        margin-top: 16rem;
+        margin-right: 7rem;
+        padding: 170px 0px;
+    }
+}
+
+@media (max-width: 919px) {
+
+    .logo{
+        font-family: 'jacques francois';
+    }
+
+    #banner .content h2 {
+        font-family: 'jacques francois';
+    }
+
+    #banner{
+        width: 920px;
+    }
+    
+    #banner .content {
+        width: 920px;
+    }
+
+    #services {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    #productos {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    .titulo_prod {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    #resenias {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    #nosotros {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    #contacto {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    #contacto .mapa iframe {
+        margin-top: 15rem;
+        width: 600px;
+        height: 300px;
+        margin-left: 2rem;
+    }
+
+    footer{
+        width: 920px;
+        margin: 0 auto;
+    }
+}
+
+
 @media (max-width: 1300px) {
     #productos .producto:hover .content {
         padding: 1rem;
@@ -975,5 +1121,57 @@ footer {
     #productos img {
         width: 100%;
     }
+}
+@media (max-width: 230px){
 
+    .logo{
+        font-family: 'jacques francois';
+    }
+
+    #banner .content h2 {
+        font-family: 'jacques francois';
+    }
+
+    #banner{
+        width: 830px;
+    }
+    
+    #banner .content {
+        width: 830px;
+    }
+
+    #services {
+        width: 830px;
+        margin: 0 auto;
+    }
+
+    #productos {
+        width: 830px;
+        margin: 0 auto;
+    }
+
+    .titulo_prod {
+        width: 830px;
+        margin: 0 auto;
+    }
+
+    #resenias {
+        width: 830px;
+        margin: 0 auto;
+    }
+
+    #nosotros {
+        width: 830px;
+        margin: 0 auto;
+    }
+
+    #contacto {
+        width: 830px;
+        margin: 0 auto;
+    }
+
+    footer{
+        width: 830px;
+        margin: 0 auto;
+    }
 }
