@@ -185,7 +185,7 @@ header.transicion {
     color: var(--color1);
     position: absolute;
     text-align: center;
-    top: 50vh
+    top: 50vh;
 }
 
 #banner .content h2 {
@@ -199,7 +199,7 @@ header.transicion {
     color: var(--color1);
     font-size: 35px;
     margin-bottom: 40px;
-    font-weight: 300;
+    /* font-weight: 300px; */
     filter: drop-shadow(7px 7px 10px black);
 }
 
@@ -301,7 +301,7 @@ header.transicion {
             #9b36b7 85%,
             #515ecf);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip9: text;
     font-family: "Unbounded", sans-serif;
     font-size: 12px;
     display: block;
@@ -396,10 +396,7 @@ header.transicion {
 /*SERVICIOS*/
 
 #services {
-    margin-bottom: 20rem;
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 50%;
     padding-bottom: 10rem;
     padding-top: 1rem;
@@ -428,8 +425,8 @@ header.transicion {
 #services .slider .container {
     width: 100%;
     height: 100%;
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 50%;
+    max-height: 100%;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -448,7 +445,7 @@ input[type="radio"] {
 
 #services .slider .container .cards .card {
     position: absolute;
-    width: 60%;
+    width: 70%;
     height: 100%;
     left: 0;
     right: 0;
@@ -869,6 +866,11 @@ footer {
 }
 
 /*resposive*/
+@media (max-width:1921px){
+    #services {
+        
+    }
+}
 @media screen and (max-width: 1919px) {
     #services {
         width: 70%;
@@ -933,30 +935,23 @@ footer {
         width: 100%;
     }
 }
+/*mio*/
 
 
-@media only screen and (max-width: 768px) {
 
-    .logo{
-        font-family: 'jacques francois';
+@media (max-width: 1200px) {
+
+    #services .slider .container{
+        max-height: 90%;
     }
-
-    #banner .content h2 {
-        font-family: 'jacques francois';
-    }
-
-    #icono{
-        display: none;
-    }
-
-    #productos img {
-        width: 390px;
-    }
-
-    .fondo .franja-vertical1 {
-        left: 50%;
+    #productos {
+        max-width: 70%;
     }
 }
+
+
+
+
 
 @media (max-width:1300px) {
     .logo{
@@ -994,7 +989,8 @@ footer {
         margin-top: 15rem;
         width: 600px;
         height: 300px;
-        margin-left: 9rem;
+        margin-left: 13rem;
+        
     }
 
     #contacto aside{
@@ -1006,6 +1002,22 @@ footer {
         margin-top: 16rem;
         margin-right: 7rem;
         padding: 170px 0px;
+    }
+    hr {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media (max-width : 1100px){
+    #productos {
+        max-width: 85%;
+    }
+
+    #productos img {
+        width: 100%;
     }
 }
 
@@ -1071,7 +1083,7 @@ footer {
 }
 
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     #productos .producto:hover .content {
         padding: 1rem;
     }
@@ -1107,21 +1119,29 @@ footer {
     #contacto .mapa {
         padding-left: 1rem;
     }
-}
+} */
 
 
+@media only screen and (max-width: 768px) {
 
+    .logo{
+        font-family: 'jacques francois';
+    }
 
+    #banner .content h2 {
+        font-family: 'jacques francois';
+    }
 
-@media (max-width : 1100px){
-    #productos {
-        max-width: 85%;
+    #icono{
+        display: none;
     }
 
     #productos img {
-        width: 100%;
+        width: 390px;
     }
 }
+
+
 @media (max-width: 230px){
 
     .logo{
